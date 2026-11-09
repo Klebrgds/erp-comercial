@@ -1,5 +1,6 @@
 import { ShieldCheck, FileText, Target, FileClock, Clock, ShoppingCart } from 'lucide-react';
 import KpiCard from '@/components/KpiCard';
+import DashboardBottomPanels from '@/components/DashboardBottomPanels';
 import DashboardCharts from '@/components/DashboardCharts'; // <-- Importação que faltava
 
 export default function Home() {
@@ -50,6 +51,13 @@ export default function Home() {
       {/* Gráficos */}
       <DashboardCharts />
 
+            {/* Gráficos */}
+      <DashboardCharts />
+      
+      {/* NOVO: Painéis Inferiores */}
+      <DashboardBottomPanels />
+      
     </div>
+
   );
 }
